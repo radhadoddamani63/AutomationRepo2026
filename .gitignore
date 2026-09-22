@@ -1,0 +1,8 @@
+# ignore this files and folders ie., we dont want push this on to github
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
