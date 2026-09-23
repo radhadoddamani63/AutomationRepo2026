@@ -5,15 +5,15 @@ export class LoginPage{
     constructor(page)
     {
         this.page=page;
-        this.usernameField = page.getByPlaceholder('Eneter user name');
-        this.passwordField = page.getByPlaceholder('Enter your Password');
+        this.emailField = page.getByPlaceholder('Enter Email');
+        this.passwordField = page.getByPlaceholder('Enter Password');
         this.signButton = page.getByText('Sign in',{exact:true})
     }
 
-    async loginToApplication(usernameField,passwordField)
+    async loginToApplication(email,password)
     {
-        await this.usernameField.fill(usernameField);
-        await this.passwordField.fill(passwordField);
+        await this.emailField.fill(email);
+        await this.passwordField.fill(password);
         await this.signButton.click();
     }
 }
