@@ -19,7 +19,7 @@
 - Run test for specfic spec file
 - npx playwright test login.spec.js
 
-- Run tets ij Ui mode
+- Run tets Ui mode
 - npx playwright test --ui
 
 ## Reports
