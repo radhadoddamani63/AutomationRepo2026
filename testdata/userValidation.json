@@ -1,0 +1,30 @@
+[
+
+{
+    "id" : "1",
+    "Email" : "adminradha123@email.com",
+    "Password" : "admin1234",
+    "message" : "USER Email Doesn't Exist"
+},
+
+{
+    "id" : "2",
+    "Email" : "admin@email.com",
+    "Password" : "",
+    "message" : "Password is required"
+},
+
+{
+    "id" : "3",
+    "Email" : "",
+    "Password" : "admin@123",
+    "message" : "Email is required"
+},
+
+{
+    "id" : "4",
+    "Email" : "",
+    "Password" : "",
+    "message" : "Email and Password is required"
+}
+]
