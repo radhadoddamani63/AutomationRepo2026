@@ -8,6 +8,7 @@ export class LoginPage{
         this.emailField = page.getByPlaceholder('Enter Email');
         this.passwordField = page.getByPlaceholder('Enter Password');
         this.signButton = page.getByText('Sign in',{exact:true})
+        this.errorMessage = page.locator(".errorMessage")
     }
 
     async loginToApplication(email,password)
@@ -15,5 +16,11 @@ export class LoginPage{
         await this.emailField.fill(email);
         await this.passwordField.fill(password);
         await this.signButton.click();
+    }
+
+
+    async getErrorMessage()
+    {
+        return await this.errorMessage.content();
     }
 }
